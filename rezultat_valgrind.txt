@@ -1,0 +1,6 @@
+==79730== 210 (24 direct, 186 indirect) bytes in 1 blocks are definitely lost in loss record 7 of 7
+==79730==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==79730==    by 0x1093C8: initList (in /home/gabi/CLionProjects/SDA/tema1/tema1)
+==79730==    by 0x1094BE: initBrowser (in /home/gabi/CLionProjects/SDA/tema1/tema1)
+==79730==    by 0x109F18: main (in /home/gabi/CLionProjects/SDA/tema1/tema1)
+==79730== 

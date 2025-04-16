@@ -1,0 +1,3 @@
+/home/gabi/CLionProjects/SDA/tema1/cmake-build-debug/CMakeFiles/tema1.dir
+/home/gabi/CLionProjects/SDA/tema1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gabi/CLionProjects/SDA/tema1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
