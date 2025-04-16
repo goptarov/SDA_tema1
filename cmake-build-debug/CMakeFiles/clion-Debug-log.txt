@@ -1,4 +1,2 @@
-/home/gabi/.local/share/JetBrains/Toolbox/apps/clion/bin/cmake/linux/x64/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/gabi/.local/share/JetBrains/Toolbox/apps/clion/bin/ninja/linux/x64/ninja -G Ninja -S /home/gabi/CLionProjects/SDA/tema1 -B /home/gabi/CLionProjects/SDA/tema1/cmake-build-debug
--- Configuring done (0.0s)
--- Generating done (0.0s)
--- Build files have been written to: /home/gabi/CLionProjects/SDA/tema1/cmake-build-debug
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /mnt/c/Users/gabi/CLionProjects/SDA/SDA_tema1
+/bin/bash: line 1: /usr/bin/cmake: No such file or directory

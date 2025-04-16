@@ -134,15 +134,13 @@ void close(tabsList* list, browser* b, FILE* out) { //does the next tab recieve 
 }
 
 void openTab(int tabid, browser* b, FILE* out) {
-	printf("helo");
 	dnode* p = b->list.head->next;
 	while(p->data->id != tabid) {
-		p = p->next;
-		if(p->data->id > tabid) {
-			printf("helo");
+		if(p->data->id > tabid || p->next == b->list.head) {
 			fprintf(out, "403 Forbidden\n");
 			return;
 		}
+		p = p->next;
 	}
 	b->current = p->data;
 }
