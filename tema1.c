@@ -45,7 +45,7 @@ void initStack(stack* s) {
 	s->top = NULL;
 }
 
-void initList(tabsList* list) { //should all of this really be in the list init?
+void initList(tabsList* list) {
 	page *implicit = malloc(sizeof(page));
 	implicit->id = 0;
 	strcpy(implicit->url, "https://acs.pub.ro/");
@@ -53,21 +53,21 @@ void initList(tabsList* list) { //should all of this really be in the list init?
 	strcpy(implicit->description, "Computer Science");
 
 	tab* tab0 = malloc(sizeof(tab));
-	dnode* dnode0 = malloc(sizeof(dnode));
+	memset(tab0, 0, sizeof(tab));
 	tab0->id = 0;
-
 	tab0->currentPage = implicit;
-
 	tab0->backwardStack = malloc(sizeof(stack));
 	tab0->forwardStack = malloc(sizeof(stack));
 	initStack(tab0->backwardStack);
 	initStack(tab0->forwardStack);
 
+	dnode* dnode0 = malloc(sizeof(dnode));
 	dnode0->data = tab0;
 
 	list->head = malloc(sizeof(dnode));
 	list->head->next = dnode0;
 	list->head->prev = dnode0;
+	list->head->data = NULL;
 	list->totLen = 1;
 	dnode0->next = list->head;
 	dnode0->prev = list->head;
@@ -104,24 +104,26 @@ void new_tab(tabsList* list, browser* b) {
 	strcpy(implicit->description, "Computer Science");
 
 	tab* newTab = malloc(sizeof(tab));
+	memset(newTab, 0, sizeof(tab));
 	newTab->id = list->totLen;
 	newTab->currentPage = implicit;
 	newTab->backwardStack = malloc(sizeof(stack));
 	newTab->forwardStack = malloc(sizeof(stack));
+	initStack(newTab->forwardStack);
+	initStack(newTab->backwardStack);
 
-	b->current = newTab;
-
-	dnode* old = list->head->prev;
 	dnode* newNode = malloc(sizeof(dnode));
 	newNode->data = newTab;
+
+	dnode* old = list->head->prev;
 	old->next = newNode;
+
+	newNode->prev = old;
+	newNode->next = list->head;
 	list->head->prev = newNode;
-	list->head->prev->next = list->head;
-	list->head->prev->prev = old;
 	list->totLen++;
 
-	initStack(b->current->forwardStack);
-	initStack(b->current->backwardStack);
+	b->current = newTab;
 }
 
 void close(tabsList* list, browser* b, FILE* out) {
@@ -180,13 +182,12 @@ void openPage(int pageid, browser* b, page pageList[50], FILE* out) {
 			break;
 		}
 	}
-	//printf("%d ", i);
 	if (i == 50) {
 		fprintf(out, "403 Forbidden\n");
 	}
 
 	push(b->current->backwardStack, b->current->currentPage);
-	//b->current->currentPage = pop(b->current->forwardStack);
+
 	b->current->currentPage = &pageList[i];
 }
 
@@ -195,13 +196,9 @@ void backward(browser* b, FILE* out) {
 		fprintf(out, "403 Forbidden\n");
 		return;
 	}
-	//b->current->forwardStack->top->data = b->current->currentPage;
-	//b->current->forwardStack->top->next = b->current->forwardStack->top;
 	push(b->current->forwardStack, b->current->currentPage);
 
 	b->current->currentPage = pop(b->current->backwardStack);
-
-	//b->current->backwardStack->top = b->current->backwardStack->top->next;
 }
 
 void forward(browser* b, FILE* out) {
@@ -209,14 +206,9 @@ void forward(browser* b, FILE* out) {
 		fprintf(out, "403 Forbidden\n");
 		return;
 	}
-	//b->current->backwardStack->top->data = b->current->currentPage;
-	//b->current->backwardStack->top->next = b->current->backwardStack->top;
 	push(b->current->backwardStack, b->current->currentPage);
 
 	b->current->currentPage = pop(b->current->forwardStack);
-
-	//b->current->forwardStack->top = b->current->forwardStack->top->next;
-	// pop(b->current->forwardStack);
 }
 
 void print(browser b, FILE* out) {
@@ -228,6 +220,7 @@ void print(browser b, FILE* out) {
 	}
 	fprintf(out, "%d ", p->data->id);
 	p = p->next;
+
 	while (p->data != b.current) {
 		if (p == b.list.head)
 			p=p->next;
@@ -239,11 +232,12 @@ void print(browser b, FILE* out) {
 			p = p->next;
 		}
 	}
+
 	fprintf(out, "\n");
 	for (int i = 0; i < strlen(b.current->currentPage->description); i++) {
 		fprintf(out, "%c", b.current->currentPage->description[i]);
 	}
-	fprintf(out, "\n");
+	if(strlen(b.current->currentPage->description) != 0) fprintf(out, "\n");
 }
 
 void recursivePrint(node* n, FILE* out) {
@@ -278,6 +272,38 @@ void printHistory(int tabid, browser b, FILE* out) {
 	}
 }
 
+//Free-ing functions for memory cleanup
+void freeStack(stack* s) {
+	node* p = s->top;
+	while (p) {
+		node* tmp = p;
+		p = p->next;
+		free(tmp);
+	}
+	free(s);
+}
+
+void freeTab(tab* t, page pageList[50]) {
+	if (t->currentPage) {
+		free(t->currentPage->description);
+		free(t->currentPage);
+	}
+	freeStack(t->forwardStack);
+	freeStack(t->backwardStack);
+	free(t);
+}
+
+void freeList(tabsList* list, page pageList[50]) {
+	dnode* p = list->head->next;
+	while (p != list->head) {
+		dnode* tmp = p;
+		p = p->next;
+		freeTab(tmp->data, pageList);
+		free(tmp);
+	}
+	free(list->head);
+}
+
 
 int main() {
 
@@ -288,15 +314,14 @@ int main() {
 	}
 	FILE* out = fopen("tema1.out","w");
 	tabsList* list = malloc(sizeof(tabsList));
-	browser* b;
-	int tabNr = 0, pageNr, operationNr;
+	browser* b = {0};
+	int  pageNr=0, operationNr=0;
 	page pageList[50] = {0};
 
 	initBrowser(&b, list);
 
 	fscanf(in, "%d", &pageNr);
 	for (int i = 0; i < pageNr; i++) {
-
 		fscanf(in, "%d", &pageList[i].id);
 		fscanf(in, "%s", pageList[i].url);
 		fgetc(in);
@@ -345,7 +370,10 @@ int main() {
 	fclose(in);
 	fclose(out);
 
-	free(list);
-	free(b);
+	for (int i = 0; i < pageNr; i++)
+		free(pageList[i].description);
 
+	freeList(list, pageList);
+	free(b);
+	free(list);
 }
