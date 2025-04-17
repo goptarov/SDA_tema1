@@ -1,6 +1,51 @@
-==79730== 210 (24 direct, 186 indirect) bytes in 1 blocks are definitely lost in loss record 7 of 7
-==79730==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
-==79730==    by 0x1093C8: initList (in /home/gabi/CLionProjects/SDA/tema1/tema1)
-==79730==    by 0x1094BE: initBrowser (in /home/gabi/CLionProjects/SDA/tema1/tema1)
-==79730==    by 0x109F18: main (in /home/gabi/CLionProjects/SDA/tema1/tema1)
-==79730== 
+==12363== Conditional jump or move depends on uninitialised value(s)
+==12363==    at 0x109C6C: print (tema1.c:231)
+==12363==    by 0x10A2E6: main (tema1.c:338)
+==12363==  Uninitialised value was created by a heap allocation
+==12363==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12363==    by 0x109421: initList (tema1.c:68)
+==12363==    by 0x1094A9: initBrowser (tema1.c:78)
+==12363==    by 0x109F62: main (tema1.c:295)
+==12363== 
+==12363== Conditional jump or move depends on uninitialised value(s)
+==12363==    at 0x1098C7: next (tema1.c:160)
+==12363==    by 0x10A1B9: main (tema1.c:323)
+==12363==  Uninitialised value was created by a heap allocation
+==12363==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12363==    by 0x109421: initList (tema1.c:68)
+==12363==    by 0x1094A9: initBrowser (tema1.c:78)
+==12363==    by 0x109F62: main (tema1.c:295)
+==12363== 
+==12363== Conditional jump or move depends on uninitialised value(s)
+==12363==    at 0x109C06: print (tema1.c:235)
+==12363==    by 0x10A2E6: main (tema1.c:338)
+==12363==  Uninitialised value was created by a heap allocation
+==12363==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12363==    by 0x109421: initList (tema1.c:68)
+==12363==    by 0x1094A9: initBrowser (tema1.c:78)
+==12363==    by 0x109F62: main (tema1.c:295)
+==12363== 
+==12363== Conditional jump or move depends on uninitialised value(s)
+==12363==    at 0x109958: prev (tema1.c:170)
+==12363==    by 0x10A1F6: main (tema1.c:326)
+==12363==  Uninitialised value was created by a heap allocation
+==12363==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12363==    by 0x109421: initList (tema1.c:68)
+==12363==    by 0x1094A9: initBrowser (tema1.c:78)
+==12363==    by 0x109F62: main (tema1.c:295)
+==12363== 
+==12363== 420 (48 direct, 372 indirect) bytes in 2 blocks are definitely lost in loss record 15 of 17
+==12363==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12363==    by 0x10968C: new_tab (tema1.c:115)
+==12363==    by 0x10A10A: main (tema1.c:314)
+==12363== 
+==12363== 612 bytes in 12 blocks are definitely lost in loss record 16 of 17
+==12363==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12363==    by 0x10A01D: main (tema1.c:303)
+==12363== 
+==12363== 726 (24 direct, 702 indirect) bytes in 1 blocks are definitely lost in loss record 17 of 17
+==12363==    at 0x4846828: malloc (in /usr/libexec/valgrind/vgpreload_memcheck-amd64-linux.so)
+==12363==    by 0x1093A8: initList (tema1.c:56)
+==12363==    by 0x1094A9: initBrowser (tema1.c:78)
+==12363==    by 0x109F62: main (tema1.c:295)
+==12363== 

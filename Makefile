@@ -1,6 +1,9 @@
-all: tema1
-	touch tema1.out;
-tema1: main.c
-	gcc -o tema1 main.c
+CFLAGS = -Wall -Wextra -std=c99 -g
+
+build: tema1
+
+tema1: tema1.c
+	$(CC) $(CFLAGS) tema1.c -o tema1
+
 clean:
-	rm -f tema1
+	rm -f tema1.c

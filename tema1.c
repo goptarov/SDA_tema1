@@ -19,6 +19,7 @@ typedef struct stack {
 
 typedef struct tabsList {
 	dnode* head;
+	int totLen;
 }tabsList;
 
 typedef struct page {
@@ -47,7 +48,7 @@ void initStack(stack* s) {
 void initList(tabsList* list) { //should all of this really be in the list init?
 	page *implicit = malloc(sizeof(page));
 	implicit->id = 0;
-	strcpy(implicit->url, "https://acs.pub.ro");
+	strcpy(implicit->url, "https://acs.pub.ro/");
 	implicit->description = malloc(sizeof(char) * 50);
 	strcpy(implicit->description, "Computer Science");
 
@@ -67,6 +68,7 @@ void initList(tabsList* list) { //should all of this really be in the list init?
 	list->head = malloc(sizeof(dnode));
 	list->head->next = dnode0;
 	list->head->prev = dnode0;
+	list->totLen = 1;
 	dnode0->next = list->head;
 	dnode0->prev = list->head;
 }
@@ -94,15 +96,15 @@ page* pop(stack* s) {
 	return data;
 }
 
-void new_tab(tabsList* list, browser* b, int closedTabs) {
+void new_tab(tabsList* list, browser* b) {
 	page *implicit = malloc(sizeof(page));
 	implicit->id = 0;
-	strcpy(implicit->url, "https://acs.pub.ro");
+	strcpy(implicit->url, "https://acs.pub.ro/");
 	implicit->description = malloc(sizeof(char) * 50);
 	strcpy(implicit->description, "Computer Science");
 
 	tab* newTab = malloc(sizeof(tab));
-	newTab->id = list->head->prev->data->id + 1 + closedTabs;
+	newTab->id = list->totLen;
 	newTab->currentPage = implicit;
 	newTab->backwardStack = malloc(sizeof(stack));
 	newTab->forwardStack = malloc(sizeof(stack));
@@ -116,21 +118,26 @@ void new_tab(tabsList* list, browser* b, int closedTabs) {
 	list->head->prev = newNode;
 	list->head->prev->next = list->head;
 	list->head->prev->prev = old;
+	list->totLen++;
 
 	initStack(b->current->forwardStack);
 	initStack(b->current->backwardStack);
 }
 
-void close(tabsList* list, browser* b, FILE* out) { //does the next tab recieve this one's id and so on? hope not
+void close(tabsList* list, browser* b, FILE* out) {
 	if (b->current->id == 0) {
 		fprintf(out, "403 Forbidden\n");
 		return;
 	}
 
-	list->head->prev = list->head->prev->prev;
-	list->head->prev->next = list->head;
+	dnode* p = list->head->next;
+	while (p->data != b->current) {
+		p = p->next;
+	}
+	p->prev->next = p->next;
+	p->next->prev = p->prev;
+	b->current = p->prev->data;
 
-	b->current = list->head->prev->data;
 }
 
 void openTab(int tabid, browser* b, FILE* out) {
@@ -150,7 +157,9 @@ void next(browser* b, tabsList list) {
 	while (p->data != b->current) {
 		p = p->next;
 	}
-	b->current = p->data;
+	if (p->next->data == list.head->data)
+		b->current = p->next->next->data;
+	else b->current = p->next->data;
 }
 
 void prev(browser* b, tabsList list) {
@@ -158,25 +167,31 @@ void prev(browser* b, tabsList list) {
 	while (p->data != b->current) {
 		p = p->prev;
 	}
-	b->current = p->data;
+	if (p->prev->data == list.head->data)
+		b->current = p->prev->prev->data;
+	else b->current = p->prev->data;
 }
 
-void openPage(int pageid, browser* b, page pageList[10], FILE* out) {
-	int i;
-	for (i = 0; i < 10; i++) {
-		if (pageid == pageList[i].id)
+void openPage(int pageid, browser* b, page pageList[50], FILE* out) {
+	int i = 0;
+
+	for (i = 0; i < 50; i++) {
+		if (pageList[i].id == pageid) {
 			break;
+		}
 	}
-	if (pageid != pageList[i].id) {
+	//printf("%d ", i);
+	if (i == 50) {
 		fprintf(out, "403 Forbidden\n");
 	}
+
 	push(b->current->backwardStack, b->current->currentPage);
 	//b->current->currentPage = pop(b->current->forwardStack);
 	b->current->currentPage = &pageList[i];
 }
 
 void backward(browser* b, FILE* out) {
-	if (b->current->backwardStack->top->next == NULL) {
+	if (b->current->backwardStack->top == NULL) {
 		fprintf(out, "403 Forbidden\n");
 		return;
 	}
@@ -184,14 +199,13 @@ void backward(browser* b, FILE* out) {
 	//b->current->forwardStack->top->next = b->current->forwardStack->top;
 	push(b->current->forwardStack, b->current->currentPage);
 
-	b->current->currentPage = b->current->backwardStack->top->data;
+	b->current->currentPage = pop(b->current->backwardStack);
 
 	//b->current->backwardStack->top = b->current->backwardStack->top->next;
-	pop(b->current->backwardStack);
 }
 
 void forward(browser* b, FILE* out) {
-	if (b->current->forwardStack->top->next == NULL) {
+	if (b->current->forwardStack->top == NULL) {
 		fprintf(out, "403 Forbidden\n");
 		return;
 	}
@@ -199,10 +213,10 @@ void forward(browser* b, FILE* out) {
 	//b->current->backwardStack->top->next = b->current->backwardStack->top;
 	push(b->current->backwardStack, b->current->currentPage);
 
-	b->current->currentPage = b->current->forwardStack->top->data;
+	b->current->currentPage = pop(b->current->forwardStack);
 
 	//b->current->forwardStack->top = b->current->forwardStack->top->next;
-	pop(b->current->forwardStack);
+	// pop(b->current->forwardStack);
 }
 
 void print(browser b, FILE* out) {
@@ -233,6 +247,7 @@ void print(browser b, FILE* out) {
 }
 
 void recursivePrint(node* n, FILE* out) {
+	if (n == NULL) return;
 	if (n->next != NULL) {
 		recursivePrint(n->next, out);
 	}
@@ -253,13 +268,16 @@ void printHistory(int tabid, browser b, FILE* out) {
 	node* m = p->data->backwardStack->top;
 	recursivePrint(n, out);
 	fprintf(out, "%s\n", p->data->currentPage->url);
-	while (m->next != NULL) {
+	if (m == NULL) return;
+	else {
+		while (m->next != NULL) {
+			fprintf(out, "%s\n", m->data->url);
+			m = m->next;
+		}
 		fprintf(out, "%s\n", m->data->url);
-		m = m->next;
 	}
-	fprintf(out, "%s\n", m->next->data->url);
-
 }
+
 
 int main() {
 
@@ -272,7 +290,7 @@ int main() {
 	tabsList* list = malloc(sizeof(tabsList));
 	browser* b;
 	int tabNr = 0, pageNr, operationNr;
-	page pageList[10];
+	page pageList[50] = {0};
 
 	initBrowser(&b, list);
 
@@ -287,18 +305,16 @@ int main() {
 	}
 
 	fscanf(in, "%d", &operationNr);
-	char operation[20];
-	int closedTabs = 0;
+	char operation[30];
 
 	for (int i = 0; i < operationNr; i++) {
 		int j;
 		fscanf(in, "%s %d", operation, &j);
 		if (strcmp(operation, "NEW_TAB") == 0) {
-			new_tab(list, b, closedTabs);
+			new_tab(list, b);
 		}
 		if (strcmp(operation, "CLOSE") == 0) {
 			close(list, b, out);
-			closedTabs++;
 		}
 		if (strcmp(operation, "OPEN") == 0) {
 			openTab(j, b, out);

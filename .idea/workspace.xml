@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="BackendCodeEditorMiscSettings">
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/OptionsDialog/SelectedPageId/@EntryValue" value="CppFormatterOtherPage" type="string" />
+    <option name="/Default/Environment/Hierarchy/GeneratedFilesCacheKey/Timestamp/@EntryValue" value="3" type="long" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated>
+      <config projectName="tema1" targetName="tema1" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5d1df167-2f8d-4c88-9905-7de8e289a577" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.clang-format" beforeDir="false" afterPath="$PROJECT_DIR$/.clang-format" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/editor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/editor.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/tema1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/tema1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/checker.sh" beforeDir="false" afterPath="$PROJECT_DIR$/checker.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-Debug-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-environment.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/build.ninja" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/build.ninja" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tema1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/tema1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/tema1.out" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/tema1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rezultat_valgrind.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rezultat_valgrind.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema1" beforeDir="false" afterPath="$PROJECT_DIR$/tema1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema1.in" beforeDir="false" afterPath="$PROJECT_DIR$/tema1.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema1.out" beforeDir="false" afterPath="$PROJECT_DIR$/tema1.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/01.When_NoPagesProviedAndPrintIsTheOnlyOperation_Should_PrintTab0.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/01.When_NoPagesProviedAndPrintIsTheOnlyOperation_Should_PrintTab0.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/02.When_NoPagesProviedAnd3TabsOpen_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/02.When_NoPagesProviedAnd3TabsOpen_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/03.When_NoPagesProviedAnd3TabsOpenAnd2TabsClosed_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/03.When_NoPagesProviedAnd3TabsOpenAnd2TabsClosed_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/04.When_NoPagesProviedAnd1TabsOpenAnd2TabsClosed_Should_ReturnOnlyError.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/04.When_NoPagesProviedAnd1TabsOpenAnd2TabsClosed_Should_ReturnOnlyError.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/05.When_NoPagesProviedAnd1TabsOpenAnd2TabsClosedAndPrint_Should_ReturnErrorAndPrintDefaultTab.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/05.When_NoPagesProviedAnd1TabsOpenAnd2TabsClosedAndPrint_Should_ReturnErrorAndPrintDefaultTab.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/06.When_NoPagesProviedAnd2TabsOpenAnd1TabsClosedAndPrintAnd1TabsOpenAndPrint_Should_PrintMultipleTimes.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/06.When_NoPagesProviedAnd2TabsOpenAnd1TabsClosedAndPrintAnd1TabsOpenAndPrint_Should_PrintMultipleTimes.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/07.When_NoPagesProviedAnd2TabsOpenAndOpenAndPrint_Should_PrintInTheCorrectOrder.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/07.When_NoPagesProviedAnd2TabsOpenAndOpenAndPrint_Should_PrintInTheCorrectOrder.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/08.When_NoPagesProvieAndOpenTabThatDoesNotExists_Should_ReturnError.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/08.When_NoPagesProvieAndOpenTabThatDoesNotExists_Should_ReturnError.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/09.When_NoPagesProvieAndMultipleNewTabsAndOpenAndPrint_Should_PrintCorrectOrder.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/09.When_NoPagesProvieAndMultipleNewTabsAndOpenAndPrint_Should_PrintCorrectOrder.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/10.When_NoTabsAndNextAndPrint_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/10.When_NoTabsAndNextAndPrint_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/11.When_NoTabsAndPrevAndPrint_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/11.When_NoTabsAndPrevAndPrint_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/12.When_NewTabsAndNextAndPrint_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/12.When_NewTabsAndNextAndPrint_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/13.When_NewTabsAndPrevAndPrint_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/13.When_NewTabsAndPrevAndPrint_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/14.When_NewTabsAndPrevsAndNextsAndPrint_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/14.When_NewTabsAndPrevsAndNextsAndPrint_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/15.When_NewTabsAndClosesAndPrevsAndNextsAndPrint_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/15.When_NewTabsAndClosesAndPrevsAndNextsAndPrint_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/16.When_NewTabsAndClosesAndOpensAndPrevsAndNextsAndPrint_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/16.When_NewTabsAndClosesAndOpensAndPrevsAndNextsAndPrint_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/17.When_PagesAndNewTabsAndClosesAndOpensAndPrevsAndNextsAndPrints_Should_PrintTabs.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/17.When_PagesAndNewTabsAndClosesAndOpensAndPrevsAndNextsAndPrints_Should_PrintTabs.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/18.When_NoPagesProviedAndPage_Should_ReturnError.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/18.When_NoPagesProviedAndPage_Should_ReturnError.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/19.When_PagesAndPageThatDoesNotExists_Should_ReturnError.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/19.When_PagesAndPageThatDoesNotExists_Should_ReturnError.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/20.When_PagesAndPageAndPrint_Should_PrintCurrentPage.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/20.When_PagesAndPageAndPrint_Should_PrintCurrentPage.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/21.When_PagesAnd2NewTabsAndPageAndPrintAndPageAndPrint_Should_PrintMultipleTimes.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/21.When_PagesAnd2NewTabsAndPageAndPrintAndPageAndPrint_Should_PrintMultipleTimes.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/22.PrintHistory_NoPages_Basic.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/22.PrintHistory_NoPages_Basic.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/23.PrintHistory_NoPages_Basic_Error.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/23.PrintHistory_NoPages_Basic_Error.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/24.PrintHistory_Pages_Basic.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/24.PrintHistory_Pages_Basic.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/25.Backward_NoPages_Basic_Error.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/25.Backward_NoPages_Basic_Error.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/26.Backward_Pages_Basic.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/26.Backward_Pages_Basic.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/27.Backward_Pages_Basic_Error.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/27.Backward_Pages_Basic_Error.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/28.Forward_NoPages_Basic_Error.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/28.Forward_NoPages_Basic_Error.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/29.Forward_Pages_Basic.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/29.Forward_Pages_Basic.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/30.Forward_Pages_Basic_Error.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/30.Forward_Pages_Basic_Error.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/31.ComplexTest.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/31.ComplexTest.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/32.ComplexTest.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/32.ComplexTest.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/33.ComplexTest.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/33.ComplexTest.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/34.ComplexTest.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/34.ComplexTest.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/35.ComplexTest.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/35.ComplexTest.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/36.ComplexTest.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/36.ComplexTest.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/37.ComplexTest.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/37.ComplexTest.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/input/38.ComplexTest.in" beforeDir="false" afterPath="$PROJECT_DIR$/tests/input/38.ComplexTest.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/01.When_NoPagesProviedAndPrintIsTheOnlyOperation_Should_PrintTab0.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/01.When_NoPagesProviedAndPrintIsTheOnlyOperation_Should_PrintTab0.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/02.When_NoPagesProviedAnd3TabsOpen_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/02.When_NoPagesProviedAnd3TabsOpen_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/03.When_NoPagesProviedAnd3TabsOpenAnd2TabsClosed_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/03.When_NoPagesProviedAnd3TabsOpenAnd2TabsClosed_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/04.When_NoPagesProviedAnd1TabsOpenAnd2TabsClosed_Should_ReturnOnlyError.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/04.When_NoPagesProviedAnd1TabsOpenAnd2TabsClosed_Should_ReturnOnlyError.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/05.When_NoPagesProviedAnd1TabsOpenAnd2TabsClosedAndPrint_Should_ReturnErrorAndPrintDefaultTab.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/05.When_NoPagesProviedAnd1TabsOpenAnd2TabsClosedAndPrint_Should_ReturnErrorAndPrintDefaultTab.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/06.When_NoPagesProviedAnd2TabsOpenAnd1TabsClosedAndPrintAnd1TabsOpenAndPrint_Should_PrintMultipleTimes.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/06.When_NoPagesProviedAnd2TabsOpenAnd1TabsClosedAndPrintAnd1TabsOpenAndPrint_Should_PrintMultipleTimes.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/07.When_NoPagesProviedAnd2TabsOpenAndOpenAndPrint_Should_PrintInTheCorrectOrder.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/07.When_NoPagesProviedAnd2TabsOpenAndOpenAndPrint_Should_PrintInTheCorrectOrder.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/08.When_NoPagesProvieAndOpenTabThatDoesNotExists_Should_ReturnError.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/08.When_NoPagesProvieAndOpenTabThatDoesNotExists_Should_ReturnError.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/09.When_NoPagesProvieAndMultipleNewTabsAndOpenAndPrint_Should_PrintCorrectOrder.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/09.When_NoPagesProvieAndMultipleNewTabsAndOpenAndPrint_Should_PrintCorrectOrder.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/10.When_NoTabsAndNextAndPrint_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/10.When_NoTabsAndNextAndPrint_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/11.When_NoTabsAndPrevAndPrint_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/11.When_NoTabsAndPrevAndPrint_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/12.When_NewTabsAndNextAndPrint_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/12.When_NewTabsAndNextAndPrint_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/13.When_NewTabsAndPrevAndPrint_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/13.When_NewTabsAndPrevAndPrint_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/14.When_NewTabsAndPrevsAndNextsAndPrint_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/14.When_NewTabsAndPrevsAndNextsAndPrint_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/15.When_NewTabsAndClosesAndPrevsAndNextsAndPrint_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/15.When_NewTabsAndClosesAndPrevsAndNextsAndPrint_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/16.When_NewTabsAndClosesAndOpensAndPrevsAndNextsAndPrint_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/16.When_NewTabsAndClosesAndOpensAndPrevsAndNextsAndPrint_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/17.When_PagesAndNewTabsAndClosesAndOpensAndPrevsAndNextsAndPrints_Should_PrintTabs.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/17.When_PagesAndNewTabsAndClosesAndOpensAndPrevsAndNextsAndPrints_Should_PrintTabs.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/18.When_NoPagesProviedAndPage_Should_ReturnError.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/18.When_NoPagesProviedAndPage_Should_ReturnError.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/19.When_PagesAndPageThatDoesNotExists_Should_ReturnError.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/19.When_PagesAndPageThatDoesNotExists_Should_ReturnError.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/20.When_PagesAndPageAndPrint_Should_PrintCurrentPage.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/20.When_PagesAndPageAndPrint_Should_PrintCurrentPage.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/21.When_PagesAnd2NewTabsAndPageAndPrintAndPageAndPrint_Should_PrintMultipleTimes.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/21.When_PagesAnd2NewTabsAndPageAndPrintAndPageAndPrint_Should_PrintMultipleTimes.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/22.PrintHistory_NoPages_Basic.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/22.PrintHistory_NoPages_Basic.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/23.PrintHistory_NoPages_Basic_Error.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/23.PrintHistory_NoPages_Basic_Error.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/24.PrintHistory_Pages_Basic.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/24.PrintHistory_Pages_Basic.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/25.Backward_NoPages_Basic_Error.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/25.Backward_NoPages_Basic_Error.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/26.Backward_Pages_Basic.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/26.Backward_Pages_Basic.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/27.Backward_Pages_Basic_Error.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/27.Backward_Pages_Basic_Error.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/28.Forward_NoPages_Basic_Error.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/28.Forward_NoPages_Basic_Error.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/29.Forward_Pages_Basic.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/29.Forward_Pages_Basic.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/30.Forward_Pages_Basic_Error.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/30.Forward_Pages_Basic_Error.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/31.ComplexTest.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/31.ComplexTest.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/32.ComplexTest.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/32.ComplexTest.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/33.ComplexTest.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/33.ComplexTest.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/34.ComplexTest.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/34.ComplexTest.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/35.ComplexTest.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/35.ComplexTest.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/36.ComplexTest.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/36.ComplexTest.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/37.ComplexTest.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/37.ComplexTest.ref" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/ref/38.ComplexTest.ref" beforeDir="false" afterPath="$PROJECT_DIR$/tests/ref/38.ComplexTest.ref" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2024" />
+    <option name="minorVersion" value="3.4" />
+    <option name="productBranch" value="Classic" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2vpIyPo12WxHjBgNjzBchVLilqb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;CMake Application.tema1.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.advertisement.text.overridden&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration name="tema1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="tema1" TARGET_NAME="tema1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="tema1" RUN_TARGET_NAME="tema1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5d1df167-2f8d-4c88-9905-7de8e289a577" name="Changes" comment="" />
+      <created>1744835842895</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744835842895</updated>
+      <workItem from="1744835843923" duration="7247000" />
+      <workItem from="1744873239781" duration="2164000" />
+      <workItem from="1744892717076" duration="1123000" />
+      <workItem from="1744900667996" duration="4000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticReloadCMake value="true" />
+  </component>
+</project>

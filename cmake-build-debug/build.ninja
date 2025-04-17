@@ -49,8 +49,8 @@ cmake_ninja_workdir = /home/gabi/CLionProjects/SDA/tema1/cmake-build-debug/
 
 build cmake_object_order_depends_target_tema1: phony || .
 
-build CMakeFiles/tema1.dir/main.c.o: C_COMPILER__tema1_unscanned_Debug /home/gabi/CLionProjects/SDA/tema1/main.c || cmake_object_order_depends_target_tema1
-  DEP_FILE = CMakeFiles/tema1.dir/main.c.o.d
+build CMakeFiles/tema1.dir/tema1.c.o: C_COMPILER__tema1_unscanned_Debug /home/gabi/CLionProjects/SDA/tema1/tema1.c || cmake_object_order_depends_target_tema1
+  DEP_FILE = CMakeFiles/tema1.dir/tema1.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/tema1.dir
   OBJECT_FILE_DIR = CMakeFiles/tema1.dir
@@ -63,7 +63,7 @@ build CMakeFiles/tema1.dir/main.c.o: C_COMPILER__tema1_unscanned_Debug /home/gab
 #############################################
 # Link the executable tema1
 
-build tema1: C_EXECUTABLE_LINKER__tema1_Debug CMakeFiles/tema1.dir/main.c.o
+build tema1: C_EXECUTABLE_LINKER__tema1_Debug CMakeFiles/tema1.dir/tema1.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/tema1.dir
   POST_BUILD = :
