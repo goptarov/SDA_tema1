@@ -29,7 +29,13 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5d1df167-2f8d-4c88-9905-7de8e289a577" name="Changes" comment="" />
+    <list default="true" id="5d1df167-2f8d-4c88-9905-7de8e289a577" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/a.out" beforeDir="false" afterPath="$PROJECT_DIR$/a.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rezultat_valgrind.txt" beforeDir="false" afterPath="$PROJECT_DIR$/rezultat_valgrind.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema1" beforeDir="false" afterPath="$PROJECT_DIR$/tema1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema1.c" beforeDir="false" afterPath="$PROJECT_DIR$/tema1.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tema1.out" beforeDir="false" afterPath="$PROJECT_DIR$/tema1.out" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,6 +48,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "goptarov"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "git@github.com:goptarov/SDA_tema1.git",
+    "accountId": "870bc138-10c8-406d-a83b-3618a5ac2943"
+  }
+}]]></component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
     <option name="majorVersion" value="2024" />
@@ -99,7 +117,7 @@
       <workItem from="1744873239781" duration="2164000" />
       <workItem from="1744892717076" duration="1123000" />
       <workItem from="1744900667996" duration="4000" />
-      <workItem from="1744918042114" duration="4320000" />
+      <workItem from="1744918042114" duration="5624000" />
     </task>
     <servers />
   </component>

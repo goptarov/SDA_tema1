@@ -327,6 +327,7 @@ int main() {
 		fgetc(in);
 		pageList[i].description = malloc(sizeof(char) * 51);
 		fgets(pageList[i].description, 50, in);
+		pageList[i].description[strlen(pageList[i].description) - 1] = '\0';
 	}
 
 	fscanf(in, "%d", &operationNr);
