@@ -84,10 +84,10 @@ void push(stack* s, page* p) {
 
 page* pop(stack* s) {
 	if (s->top == NULL) return NULL;
-	node* temp = s->top;
-	page* data = temp->data;
+	node* tmp = s->top;
+	page* data = tmp->data;
 	s->top = s->top->next;
-	free(temp);
+	free(tmp);
 	return data;
 }
 
@@ -209,6 +209,7 @@ void openPage(int pageid, browser* b, page pageList[50], FILE* out) {
 	}
 	if (i == 50) {
 		fprintf(out, "403 Forbidden\n");
+		return;
 	}
 
 	push(b->current->backwardStack, b->current->currentPage);
@@ -257,10 +258,8 @@ void print(browser b, FILE* out) {
 			p = p->next;
 		}
 	}
-
 	fprintf(out, "\n");
-	fprintf(out, "%s", b.current->currentPage->description);
-	if(strlen(b.current->currentPage->description) != 0) fprintf(out, "\n");
+	fprintf(out, "%s\n", b.current->currentPage->description);
 }
 
 void recursivePrint(node* n, FILE* out) {
@@ -283,9 +282,13 @@ void printHistory(int tabid, browser b, FILE* out) {
 
 	node* n = p->data->forwardStack->top;
 	node* m = p->data->backwardStack->top;
+
 	recursivePrint(n, out);
+
 	fprintf(out, "%s\n", p->data->currentPage->url);
-	if (m == NULL) return;
+
+	if (m == NULL)
+		return;
 	else {
 		while (m->next != NULL) {
 			fprintf(out, "%s\n", m->data->url);
@@ -327,11 +330,12 @@ int main() {
 	}
 
 	fscanf(in, "%d", &operationNr);
-	char operation[30];
+	char operation[40];
 
 	for (int i = 0; i < operationNr; i++) {
 		int j;
 		fscanf(in, "%s %d", operation, &j);
+		operation[strcspn(operation, "\n")] = '\0';
 		if (strcmp(operation, "NEW_TAB") == 0) {
 			new_tab(list, b, implicit);
 		}
