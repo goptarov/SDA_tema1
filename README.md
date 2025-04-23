@@ -1,7 +1,7 @@
 Total: 96/100
 Valgrind: 19/20
 
-## Structuri:
+## structuri:
 
 Lista tabsList va contine un pointer dnode care reprezinta head-ul listei(santinela) si un intreg care reprezinta
 lungimea maxima a listei(pentru a stii cel mai mare id al unui tab, util cand adaugam un tab nou).
@@ -15,18 +15,18 @@ node este o structura care contine un pointer catre o pagina si un pointer catre
 
 page, tab, si browser sunt structuri construite conform cerintei.
     
-## Init:
+## init:
 
 initStack() asigura ca top-ul stack-ului este NULL la inceput.
 initList() initializeaza un prim tab cu id 0, ii atribuie pagina implicit, ii initializeaza stivele si apoi il adauga in
 lista dublu inlantuita. initBrowser() apeleaza initList si atribuie browserului lista initializata si primul tab drept tab
 curent.
 
-## Push/pop:
+## push/pop:
 
 Functii simple pentru a aduga("push()") si scoate("pop()") pagini dintr-o stiva.
 
-## Functii de eliberare a memoriei:
+## functii de eliberare a memoriei:
 
 freeList() parcurge toata lista tabsList si elibereaza fiecare tab cu freeTab(). freeTab() apeleaza freeStack() pentru
 forwardStack si backwardStack si apoi elibereaza tab-ul. freeStack() parcurge stiva si elibereaza fiecare nod din ea.
