@@ -1,3 +1,4 @@
+/* GOPTAROV Gabriel - 315CC */
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -170,7 +171,7 @@ void close(tabsList* list, browser* b, FILE* out) {
 void openTab(int tabid, browser* b, FILE* out) {
 	dnode* p = b->list->head->next;
 	while(p->data->id != tabid) {
-		if(p->data->id > tabid || p->next == b->list->head) {
+		if(p->next == b->list->head) {
 			fprintf(out, "403 Forbidden\n");
 			return;
 		}
@@ -249,7 +250,7 @@ void print(browser b, FILE* out) {
 
 	while (p->data != b.current) {
 		if (p == b.list->head)
-			p=p->next;
+			p = p->next;
 		else {
 			if (p->next->data == b.current)
 				fprintf(out, "%d", p->data->id);
@@ -259,7 +260,7 @@ void print(browser b, FILE* out) {
 		}
 	}
 	fprintf(out, "\n");
-	fprintf(out, "%s\n", b.current->currentPage->description);
+	fprintf(out, "%s", b.current->currentPage->description);
 }
 
 void recursivePrint(node* n, FILE* out) {
@@ -289,13 +290,11 @@ void printHistory(int tabid, browser b, FILE* out) {
 
 	if (m == NULL)
 		return;
-	else {
-		while (m->next != NULL) {
-			fprintf(out, "%s\n", m->data->url);
-			m = m->next;
-		}
+	while (m->next != NULL) {
 		fprintf(out, "%s\n", m->data->url);
+		m = m->next;
 	}
+	fprintf(out, "%s\n", m->data->url);
 }
 
 int main() {
@@ -315,18 +314,19 @@ int main() {
 	implicit->id = 0;
 	strcpy(implicit->url, "https://acs.pub.ro/");
 	implicit->description = malloc(sizeof(char) * 50);
-	strcpy(implicit->description, "Computer Science");
+	strcpy(implicit->description, "Computer Science\n");
 
 	initBrowser(&b, list, implicit);
-
+	char tempStr[50];
 	fscanf(in, "%d", &pageNr);
 	for (int i = 0; i < pageNr; i++) {
 		fscanf(in, "%d", &pageList[i].id);
 		fscanf(in, "%s", pageList[i].url);
 		fgetc(in);
-		pageList[i].description = malloc(sizeof(char) * 51);
-		fgets(pageList[i].description, 51, in);
-		pageList[i].description[strlen(pageList[i].description) - 1] = '\0';
+		fgets(tempStr, 50, in); //used to know the exact memory we need for description
+		pageList[i].description = malloc(sizeof(char) * (strlen(tempStr) + 1));
+		strcpy(pageList[i].description, tempStr);
+		pageList[i].description[strlen(pageList[i].description) - 1] = '\n';
 	}
 
 	fscanf(in, "%d", &operationNr);

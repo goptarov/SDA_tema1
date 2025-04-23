@@ -1,9 +1,8 @@
-CFLAGS = -Wall -Wextra -std=c99 -g
+build:
+	gcc -o tema1 tema1.c
 
-build: tema1
-
-tema1: tema1.c
-	$(CC) $(CFLAGS) tema1.c -o tema1
+run:
+	./tema1
 
 clean:
 	rm -f tema1.c

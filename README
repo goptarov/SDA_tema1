@@ -1,7 +1,0 @@
-Total: 96/100
-Valgrind: 19/20
-
-No ideea why the last two tests fail, some output lines seem to be missing. Adding more operations increases the number of missing
-lines, but after troubleshooting it doesn't seem to be a buffer issue.
-
-TODO: Explaining the code.
